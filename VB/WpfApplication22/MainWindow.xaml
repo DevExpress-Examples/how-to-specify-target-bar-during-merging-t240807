@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" 
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" 
+    x:Class="WpfApplication22.MainWindow"
+        Title="MainWindow" Height="196" Width="397">
+    <Grid>
+
+        <DockPanel>
+            <dxb:BarContainerControl>
+                <dxb:MainMenuControl dxb:MergingProperties.Name="menu1">
+                    <dxb:BarButtonItem Content="File"/>
+                </dxb:MainMenuControl>
+                <dxb:MainMenuControl dxb:MergingProperties.Name="menu2">
+                    <dxb:BarButtonItem Content="Copy"/>
+                </dxb:MainMenuControl>
+                <dxb:MainMenuControl dxb:MergingProperties.ElementMergingBehavior="InternalWithExternal"  dxb:MergingProperties.Name="menu2">
+                    <dxb:BarButtonItem Content="Paste"/>
+                </dxb:MainMenuControl>
+            </dxb:BarContainerControl>
+        </DockPanel>
+
+    </Grid>
+</Window>
